@@ -6,6 +6,7 @@ namespace e_commerce.Data.Services
 {
     public interface IProducersService
     {
+
         Task<IEnumerable<Producer>> getAllAsync();
         Task<Producer> GetByIdAsync(int id);
 

@@ -13,6 +13,8 @@ namespace e_commerce.Data.Services
         {
             _context = context;
         }
+
+
         public async Task AddAsync(Producer producer)
         {
             await _context.Producers.AddAsync(producer);
@@ -44,5 +46,7 @@ namespace e_commerce.Data.Services
             await _context.SaveChangesAsync();
             return NewProducer;
         }
+
+       
     }
 }
